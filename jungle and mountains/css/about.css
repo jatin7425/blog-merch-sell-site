@@ -1,0 +1,468 @@
+body {
+    background-color: rgb(166, 112, 216);
+}
+
+#section1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.578);
+    padding: 10% 0;
+}
+
+#section1 #donation {
+    width: 40%;
+    height: 150px;
+    min-width: 226px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#section1 #donation a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#section1 #donation a img {
+    height: 20px;
+}
+
+#section1 #donation a:hover {
+    background-color: rgba(255, 0, 0, 0.747);
+}
+
+#section1 #donation a:active {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#section1 h1 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+#section1 #donation h1 hr {
+    width: 0%;
+    margin-left: -5px;
+}
+
+#section1:hover #donation h1 hr {
+    width: 120%;
+    transition: all ease 0.5s;
+}
+
+@media (max-width: 1024px) {
+    #section1 h1 {
+        font-size: 20px;
+    }
+}
+
+#section2 {
+    padding: 2% 3%;
+    margin: 10px 0;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2%;
+}
+
+#section2 h1 {
+    color: white;
+}
+
+#section2 hr {
+    width: 100%;
+    margin: 5px 0;
+}
+
+#section2 h3 {
+    color: white;
+}
+
+#section3 {
+    padding: 2% 3%;
+    margin: 10px 0;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+#section3 h1 {
+    text-align: start;
+    color: white;
+}
+
+#section3 hr {
+    width: 100%;
+    margin: 5px 0;
+}
+
+#section3 #services {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+#services .servicecard {
+    width: 39vmin;
+    min-width: 125px;
+    aspect-ratio: 1/1.2;
+    padding: 6px;
+    background: url(../images/landing-img/naturebg.jpg) center no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.767);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 1s;
+    border-radius: 5px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.34), inset 0 2px 4px rgba(255, 255, 255, 0.19);
+    overflow: hidden;
+    position: relative;
+}
+
+.servicecard h1 {
+    text-align: center !important;
+    text-transform: capitalize;
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.servicecard .servdets {
+    width: 90%;
+    height: 74%;
+    top: 0;
+    background-color: rgba(250, 235, 215, 0.747);
+    transform: translateY(-100%);
+    transition: all ease 1s;
+    border-radius: 0 0 30px 30px;
+    position: absolute;
+    padding: 2%;
+}
+
+.servdets h2 {
+    font-size: 25px;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.496);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.127);
+}
+
+@media (max-width: 768px) {
+    .servicecard .servdets {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .servicecard h1 {
+        font-size: 5vw;
+    }
+
+    .servdets h2 {
+        font-size: 15px;
+    }
+}
+
+#section4 {
+    padding: 2% 3%;
+    margin: 10px 0;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2%;
+}
+
+#section4 h1 {
+    color: white;
+}
+
+#section4 hr {
+    width: 100%;
+    margin: 5px 0;
+}
+
+#section4 h3 {
+    color: white;
+}
+
+
+
+#section5 {
+    padding: 2% 3%;
+    margin: 10px 0;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+#section5 h1 {
+    text-align: start;
+    color: white;
+}
+
+#section5 hr {
+    width: 100%;
+    margin: 5px 0;
+}
+
+#section5 #donorcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.donorcard {
+    width: 48vmin;
+    min-width: 280px;
+    aspect-ratio: 1/1.2;
+    background-color: rgb(28, 40, 149);
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.34), inset 0 2px 4px rgba(255, 255, 255, 0.19);
+}
+
+.donorcard img {
+    position: relative;
+    width: 96%;
+    aspect-ratio: 1/1;
+    border-radius: 20px 20px 0 0;
+    border: 7px solid white;
+    z-index: 1;
+    transition: all ease 1s;
+}
+
+.donorcard img:hover {
+    border-radius: 0 !important;
+}
+
+.donordets {
+    position: absolute;
+    background-color: bisque;
+    color: rgba(0, 0, 0, 0.496) !important;
+    width: 92%;
+    padding: 4%;
+    height: 70%;
+    border-radius: 30px 30px 0 0;
+    transform: translateX(-100%);
+    transition: all ease 1s;
+}
+
+.donordets h2 {
+    font-size: 20px;
+    margin-top: 15%;
+}
+
+.donorcard h1 {
+    position: absolute;
+    background-color: bisque;
+    border-radius: 15px 15px 0 0;
+    bottom: 0;
+    width: 94%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.496) !important;
+}
+
+#section5 #slidefordonor {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+#slidefordonor h1 {
+    width: max-content;
+    white-space: nowrap;
+    height: 10%;
+    padding: 5px 0;
+
+}
+
+#slidefordonor .slidedonor {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+}
+
+#slidefordonor .slidedonor .slideimg {
+    height: 60%;
+    padding: 5px 0;
+}
+
+.slideimg img {
+    height: 90%;
+}
+
+@media (max-width:680px) {
+    #section5 #slidefordonor {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    #slidefordonor .slidedonor {
+        position: relative;
+        width: 100vw;
+        overflow: hidden;
+        animation: slide linear 15s infinite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #slidefordonor .slidedonor .slideimg {
+        width: 99% !important;
+        min-width: 300px !important;
+        height: 50%;
+        padding: 5px 0;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+    }
+
+    #slideimg1 {
+        left: 0;
+        opacity: 10;
+        animation: img1 15s linear infinite;
+    }
+
+    #slideimg2 {
+        left: 0;
+        opacity: 0;
+        animation: img2 15s linear infinite;
+    }
+
+    #slideimg3 {
+        left: 0;
+        opacity: 0;
+        animation: img3 15s linear infinite;
+    }
+
+    #slideimg4 {
+        left: 0;
+        opacity: 0;
+        animation: img4 15s linear infinite;
+    }
+
+    @keyframes img1 {
+        0%{
+            opacity: 10;
+        }
+        15% {
+            opacity: 10;
+        }
+        20% {
+            opacity: 0;
+        }
+
+        95% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 10;
+        }
+    }
+
+    @keyframes img2 {
+        0%{
+            opacity: 0;
+        }
+        20% {
+            opacity: 0;
+        }
+        25% {
+            opacity: 10;
+        }
+
+        40% {
+            opacity: 10;
+        }
+        45% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes img3 {
+        0% {
+            opacity: 0;
+        }
+        45% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 10;
+        }
+        65% {
+            opacity: 10;
+        }
+        70% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes img4 {
+        0% {
+            opacity: 0;
+        }
+        70% {
+            opacity: 0;
+        }
+        75% {
+            opacity: 10;
+        }
+        90% {
+            opacity: 10;
+        }
+        95% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+}
